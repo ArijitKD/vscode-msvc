@@ -12,5 +12,8 @@ A program that launches Visual Studio Code with MSVC Toolchain support.
 * Download the latest version of ```vscode-msvc``` from the [Releases](https://github.com/ArijitKD/vscode-msvc/releases) section. There are two files, ```vscode-msvc-x86.exe``` and ```vscode-msvc-x64.exe```. They are for the 32-bit and 64-bit MSVC toolchains respectively, and do not denote the program architecture. You'd want to download both for convenience.
 * Copy them to your Desktop/Workspace folder and use them as per your requirements.
 
+## Known issues
+* For switching between x64 and x86 MSVC Toochain the current instance of VS Code needs to be closed, otherwise the new instance with not launch with the desired toolchain support. This is not a bug, but an issue with VS Code itself where the environment variables of new instances are not properly reset.
+  
 ## License
 ```vscode-msvc``` is available under the MIT License.
